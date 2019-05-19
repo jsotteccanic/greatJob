@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Buenta trabajo!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="manifest" href="./manifest.json">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/semantic.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./js/semantic.min.js"></script>
+    <script src="https://dmla.github.io/jsqrcode/src/qr_packed.js"></script>
+
+    <!-- metas y tag para PAW -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- Metas para el progresive web app -->
+    <meta name="theme-color" content="#F7DF1E">
+    <link rel="icon" type="image/png" sizes="72x72" href="./images/icons/icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/icons/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./images/icons/icon-128x128.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="./images/icons/icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="./images/icons/icon-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/icons/icon-512x512.png">
+
+    <!-- metas para ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Add to Home">
+    <link rel="shortcut icon" sizes="16x16" href="./images/icons/icon-192x192.png">
+    <link rel="shortcut icon" sizes="196x196" href="./images/icons/icon-192x192.png">
+    <link rel="apple-touch-icon-precomposed" href="./images/icons/icon-192x192.png">
+    <!-- fin metas ios -->
+
+    <style>
+        h1,
+        h2,
+        a {
+            font-family: 'Lobster', cursive;
+        }
+
+        body {
+            background: #b92b27;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1565C0, #b92b27);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            font-size: 14px;
+            color: white;
+            margin: 0;
+            padding: 0;
+            padding-top: 5px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            margin-top: 10px;
+            padding-top: 0px;
+            padding-bottom: 35px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 250px;
+            height: 250px;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ui.icon.buttons {
+            float: left;
+        }
+
+        a {
+            float: right;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+    <!-- addTohome -->
+    <link rel="stylesheet" href="./css/addtohomescreen.css">
+    <script src="./js/addtohomescreen.js"></script>
+    <script>
+        addToHomescreen();
+    </script>
+</head>
+<body class="dimmable">
+
+  <!-- Swiper -->
+  <div class="ui container">
+      <a href="#" class="ui button mini inverted white circular" onclick="cerrarSession()">salir</a>
+      <div class="ui left vertical menu sidebar">
+          <a class="item">
+              Item 1
+          </a>
+          <a class="item">
+              Item 2
+          </a>
+          <a class="item">
+              Item 3
+          </a>
+      </div>
+      <header>
+          <h1>
+              Selecciona una tarjeta
+          </h1>
+      </header>
+      <div class="pusher left right">
+          <div class="swiper-container swiper-container-coverflow swiper-container-3d swiper-container-initialized swiper-container-horizontal" style="cursor: grab;">
+              <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-158.5px, 0px, 0px); perspective-origin: 625px 50%;">
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(400deg); z-index: -7;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/Resilencia%2FA.jpg?alt=media&amp;token=2ebdbccc-bc8f-4064-8751-4f76d4445ffd" alt="">
+                      </div>
+                      <div>
+                          <h2>resiliencia</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 8; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-prev" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(200deg); z-index: -3;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/Resilencia%2FB.jpg?alt=media&amp;token=54498256-4ad3-44d1-9666-0e081635fff8" alt="">
+                      </div>
+                      <div>
+                          <h2>resiliencia</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 4; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-active" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/Resilencia%2FC.jpg?alt=media&amp;token=2f8f5edc-d1eb-4d3f-ac9a-57f886ee2817" alt="">
+                      </div>
+                      <div>
+                          <h2>resiliencia</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-next" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(-200deg); z-index: -3;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/Resilencia%2FD.jpg?alt=media&amp;token=8a74a2fc-beee-4493-bc05-990b755024fa" alt="">
+                      </div>
+                      <div>
+                          <h2>resiliencia</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 4; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(-400deg); z-index: -7;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/AutoDesarrollo%2FA.jpg?alt=media&amp;token=7b09060e-1c20-4321-a3e1-41011f8eee0f" alt="">
+                      </div>
+                      <div>
+                          <h2>Auto desarrollo</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 8; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1200px) rotateX(0deg) rotateY(-600deg); z-index: -11;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/AutoDesarrollo%2FB.jpg?alt=media&amp;token=a13d954b-942c-42af-be20-c44a13f2790e" alt="">
+                      </div>
+                      <div>
+                          <h2>Auto desarrollo</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 12; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1600px) rotateX(0deg) rotateY(-800deg); z-index: -15;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/AutoDesarrollo%2FC.jpg?alt=media&amp;token=3c43b072-f6ec-4cda-8173-21a10586d743" alt="">
+                      </div>
+                      <div>
+                          <h2>Auto desarrollo</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 16; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2000px) rotateX(0deg) rotateY(-1000deg); z-index: -19;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/AutoDesarrollo%2FD.jpg?alt=media&amp;token=2c73ede9-67c5-43ee-b01a-68c7ef8ee7ac" alt="">
+                      </div>
+                      <div>
+                          <h2>Auto desarrollo</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 20; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2400px) rotateX(0deg) rotateY(-1200deg); z-index: -23;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/AutoDesarrollo%2FE.jpg?alt=media&amp;token=24cb1d7f-d5e5-4763-8765-0f361fe57a41" alt="">
+                      </div>
+                      <div>
+                          <h2>Auto desarrollo</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 24; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -2800px) rotateX(0deg) rotateY(-1400deg); z-index: -27;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/Empuje%2FE.jpg?alt=media&amp;token=0f34090f-937a-4fe0-80ec-f6cf3870b32b" alt="">
+                      </div>
+                      <div>
+                          <h2>Lider</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 28; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3200px) rotateX(0deg) rotateY(-1600deg); z-index: -31;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/Empuje%2FD.jpg?alt=media&amp;token=155fed0e-5fa1-44e4-9718-6b9b36671d24" alt="">
+                      </div>
+                      <div>
+                          <h2>Lider</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 32; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -3600px) rotateX(0deg) rotateY(-1800deg); z-index: -35;">
+                      <div>
+                          <img src="https://firebasestorage.googleapis.com/v0/b/appreconocimiento-ecaa9.appspot.com/o/Empuje%2FA.jpg?alt=media&amp;token=80cb11cc-aebe-493e-9de7-aafd7608d274" alt="">
+                      </div>
+                      <div>
+                          <h2>Lider</h2>
+                      </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 36; transition-duration: 0ms;"></div></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          <div id="enviarForm" class="ui basic mini modal">
+              <div class="header">
+
+                  <h1>Enviar mensaje </h1>
+              </div><i class="close icon"></i>
+              <div class="content">
+
+                  <div class="ui inverted segment">
+                      <form class="ui form inverted">
+                          <div class="field">
+                              <label id="destinatario"></label>
+                          </div>
+                          <input id="readQR" type="file" accept="image/*" capture="environment" onchange="openQRCamera(this);" hidden="">
+                          <div class="field">
+                              <label>Mensaje (Opcional)</label>
+                              <textarea name="" id="mensaje" cols="30" rows="5"></textarea>
+                          </div>
+                          <button class="ui button fluid inverted green" onclick="enviarCorreo(event)">Enviar</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <!-- login -->
+          
+
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="./js/swiper.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+      <script>
+          // Initialize Firebase
+          var config = {
+              apiKey: "AIzaSyAffvS0jx68q_FP4oesLHdvBO3z71eLX0s",
+              authDomain: "appreconocimiento-ecaa9.firebaseapp.com",
+              databaseURL: "https://appreconocimiento-ecaa9.firebaseio.com",
+              projectId: "appreconocimiento-ecaa9",
+              storageBucket: "appreconocimiento-ecaa9.appspot.com",
+              messagingSenderId: "618096000912"
+          };
+          firebase.initializeApp(config);
+      </script>
+      <!-- Initialize Swiper -->
+      <script>
+          var swiper = new Swiper('.swiper-container', {
+              effect: 'coverflow',
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 4,
+                  slideShadows: true,
+              }
+          });
+      </script>
+
+      <script>
+          let user = document.getElementById("user");
+          let pw = document.getElementById("pw");
+          let divs = document.querySelectorAll("img");
+          let readQR = document.getElementById("readQR");
+          let destinatario = document.getElementById("destinatario");
+          let mensaje = document.getElementById("mensaje");
+          let imgUrl = null;
+          let dataQr = null;
+
+          //Validar sesión
+          firebase.auth().onAuthStateChanged(function (user) {
+              if (user) {
+                  $('#loginForm').modal('hide');
+                  user.value = "";
+                  pw.value = "";
+              } else {
+                  $('#loginForm').modal('setting', 'closable', false).modal('show');
+                  user.value = "";
+                  pw.value = "";
+              }
+          });
+          //asignando evento a los divs con imagenes
+          divs.forEach(div => {
+              div.addEventListener("click", e => {
+                  let msj = confirm("¿Desea enviar esta tarjeta?");
+                  if (msj) {
+                      imgUrl = e.target.src;
+                      readQR.click();
+                      $('#enviarForm').modal('show');
+                  }
+              })
+          });
+          //Lógica del programa
+          function iniciarSession(e) {
+              e.preventDefault();
+              firebase
+                  .auth()
+                  .signInWithEmailAndPassword(user.value, pw.value)
+                  .catch(function (error) {
+                      if (error) {
+                          alert(error.message);
+                          user.value = "";
+                          pw.value = "";
+                      } else {
+                          $('#loginForm').modal('hide');
+                          user.value = "";
+                          pw.value = "";
+                      }
+                  });
+          }
+          function cerrarSession() {
+              firebase.auth().signOut().then(function () {
+                  user.value = "";
+                  pw.value = "";
+              }).catch(function (error) {
+                  alert(error)
+              });
+          }
+
+          function openQRCamera(node) {
+              var reader = new FileReader();
+              reader.onload = function () {
+                  node.value = "";
+                  qrcode.callback = function (res) {
+                      if (res instanceof Error) {
+                          console.log("No QR code found. Please make sure the QR code is within the camera's frame and try again.");
+                      } else {
+                          res = JSON.parse(res);
+                          dataQr = res.correo;
+                          destinatario.innerHTML = `destinatario : ${res.nombre}`;
+                      }
+                  };
+                  qrcode.decode(reader.result);
+              };
+              reader.readAsDataURL(node.files[0]);
+          }
+          function enviarCorreo(e) {
+              e.preventDefault();
+              let data = {
+                  destino: dataQr,
+                  mensaje: mensaje.value,
+                  url: imgUrl
+              }
+              console.log(data);
+              fetch('https://us-central1-appreconocimiento-ecaa9.cloudfunctions.net/helloWorld', {
+                  method: 'POST',
+                  body: JSON.stringify(data),
+                  headers: {
+                      'Content-Type': 'application/json'
+                  }
+              })
+                  .then(x => x.text())
+                  .then(x => {
+                      console.log(x);
+                      alert(x);
+                      imgUrl = null;
+                      dataQr = null;
+                      $('#enviarForm').modal('hide');
+                  })
+                  .catch(err => { console.log(err); alert(err); });
+          }
+      </script>
+
+
+</div><div class="ui dimmer modals page transition hidden"><div id="loginForm" class="ui basic mini modal transition hidden">
+
+              <div class="content">
+                  <div class="header">
+                      <h1>Iniciar sesión</h1>
+                      <div class="ui inverted segment">
+                          <form class="ui form inverted">
+                              <div class="field">
+                                  <input type="text" id="user" placeholder="correo@electronico.com">
+                              </div>
+                              <div class="field">
+                                  <input type="password" id="pw" placeholder="contraseña">
+                              </div>
+                              <button class="ui button fluid inverted green" onclick="iniciarSession(event)">Enviar</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div></div></body>
+</html>
