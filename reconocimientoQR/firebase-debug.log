@@ -1,0 +1,62 @@
+[debug] [2019-05-20T23:38:13.448Z] ----------------------------------------------------------------------
+[debug] [2019-05-20T23:38:13.449Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\j_sotteccani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-05-20T23:38:13.449Z] CLI Version:   6.6.0
+[debug] [2019-05-20T23:38:13.449Z] Platform:      win32
+[debug] [2019-05-20T23:38:13.449Z] Node Version:  v8.11.3
+[debug] [2019-05-20T23:38:13.449Z] Time:          Mon May 20 2019 18:38:13 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2019-05-20T23:38:13.451Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-20T23:38:13.461Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-20T23:38:13.462Z] > authorizing via signed-in user
+[debug] [2019-05-20T23:38:13.462Z] [iam] checking project appreconocimiento-ecaa9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-05-20T23:38:13.464Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/appreconocimiento-ecaa9:testIamPermissions  
+
+[debug] [2019-05-20T23:38:17.957Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-20T23:38:17.962Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/appreconocimiento-ecaa9  
+ 
+[debug] [2019-05-20T23:38:21.278Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'appreconocimiento-ecaa9'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-05-20T23:38:21.282Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/appreconocimiento-ecaa9/versions  
+
+[debug] [2019-05-20T23:38:25.383Z] <<< HTTP RESPONSE 200
+[info] i  hosting[appreconocimiento-ecaa9]: beginning deploy...
+[info] i  hosting[appreconocimiento-ecaa9]: found 37 files in public
+[debug] [2019-05-20T23:38:25.428Z] [hosting] hash cache [cHVibGlj] load error: lines is not defined
+[debug] [2019-05-20T23:38:25.583Z] [hosting] hash cache [cHVibGlj] stored for 37 files
+[debug] [2019-05-20T23:38:25.584Z] [hosting][hash queue][FINAL]
+[debug] [2019-05-20T23:38:25.584Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/appreconocimiento-ecaa9/versions/324b96628ac8a875:populateFiles  
+ <request body omitted>
+[debug] [2019-05-20T23:38:42.246Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-20T23:38:42.248Z] [hosting][populate queue][FINAL]
+[debug] [2019-05-20T23:38:42.248Z] [hosting] uploads queued: 1
+[debug] [2019-05-20T23:39:23.441Z] [uploadQueue] Retrying task 831eb3fa27dd1eb632f6811af2bea89b6b30e613e5ab913038ecff5d91799cd1
+[debug] [2019-05-20T23:39:32.220Z] [uploadQueue] Retrying task 831eb3fa27dd1eb632f6811af2bea89b6b30e613e5ab913038ecff5d91799cd1
+[debug] [2019-05-20T23:39:33.822Z] [uploadQueue] Retrying task 831eb3fa27dd1eb632f6811af2bea89b6b30e613e5ab913038ecff5d91799cd1
+[debug] [2019-05-20T23:39:37.035Z] [uploadQueue] Retrying task 831eb3fa27dd1eb632f6811af2bea89b6b30e613e5ab913038ecff5d91799cd1
+[debug] [2019-05-20T23:39:43.447Z] [uploadQueue] Retrying task 831eb3fa27dd1eb632f6811af2bea89b6b30e613e5ab913038ecff5d91799cd1
+[debug] [2019-05-20T23:39:43.452Z] [uploadQueue] Retries exhausted for task 831eb3fa27dd1eb632f6811af2bea89b6b30e613e5ab913038ecff5d91799cd1:
+[debug] [2019-05-20T23:39:43.452Z] [hosting][upload queue][FINAL]
+[debug] [2019-05-20T23:40:04.468Z] Error: getaddrinfo ENOTFOUND upload-firebasehosting.googleapis.com upload-firebasehosting.googleapis.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-05-20T23:41:49.255Z] ----------------------------------------------------------------------
+[debug] [2019-05-20T23:41:49.257Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\j_sotteccani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-05-20T23:41:49.257Z] CLI Version:   6.6.0
+[debug] [2019-05-20T23:41:49.257Z] Platform:      win32
+[debug] [2019-05-20T23:41:49.257Z] Node Version:  v8.11.3
+[debug] [2019-05-20T23:41:49.257Z] Time:          Mon May 20 2019 18:41:49 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2019-05-20T23:41:49.257Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-20T23:41:49.270Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-20T23:41:49.271Z] > authorizing via signed-in user
+[debug] [2019-05-20T23:41:49.272Z] [iam] checking project appreconocimiento-ecaa9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-05-20T23:41:49.273Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/appreconocimiento-ecaa9:testIamPermissions  
+
+[debug] [2019-05-20T23:41:50.520Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-20T23:41:50.523Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/appreconocimiento-ecaa9  
+ 
