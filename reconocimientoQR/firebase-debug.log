@@ -1,0 +1,13 @@
+[debug] [2019-05-21T00:19:18.758Z] ----------------------------------------------------------------------
+[debug] [2019-05-21T00:19:18.760Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\j_sotteccani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-05-21T00:19:18.760Z] CLI Version:   6.6.0
+[debug] [2019-05-21T00:19:18.760Z] Platform:      win32
+[debug] [2019-05-21T00:19:18.760Z] Node Version:  v8.11.3
+[debug] [2019-05-21T00:19:18.761Z] Time:          Mon May 20 2019 19:19:18 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2019-05-21T00:19:18.761Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-21T00:19:18.771Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-21T00:19:18.772Z] > authorizing via signed-in user
+[debug] [2019-05-21T00:19:18.772Z] [iam] checking project appreconocimiento-ecaa9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-05-21T00:19:18.774Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/appreconocimiento-ecaa9:testIamPermissions  
+
