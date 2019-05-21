@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Great Job!</title>
-    <meta http-equiv="Pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="manifest" href="./manifest.json">
     <!-- Link Swiper's CSS -->
@@ -275,6 +274,7 @@
             let readQR = document.getElementById("readQR");
             let destinatario = document.getElementById("destinatario");
             let mensaje = document.getElementById("mensaje");
+            let tipoReconocimiento = null;
             let imgUrl = null;
             let dataQr = null;
             let userMail = null;
@@ -296,6 +296,7 @@
                 div.addEventListener("click", e => {
                     // let msj = confirm("¿Desea enviar esta tarjeta?");
                     // if (msj) {
+                        tipoReconocimiento = e.target.parentElement.parentElement.children[1].innerText;
                         imgUrl = e.target.src;
                         destinatario.innerHTML = nombreDestinatario;
                         mensaje.value = "";
@@ -359,6 +360,7 @@
                 e.preventDefault();
                 let data = {
                     destino: correoDestinatario||dataQr,
+                    tipo: tipoReconocimiento,
                     mensaje: mensaje.value,
                     url: imgUrl
                 }
@@ -376,6 +378,9 @@
                         alert(x);
                         imgUrl = null;
                         dataQr = null;
+                        correoDestinatario = null;
+                        mensaje = null;
+                        tipo = null;
                         $('#enviarForm').modal('hide');
                     })
                     .catch(err => { console.log(err); alert(err); });
@@ -385,7 +390,7 @@
                 url = new URL(url_string);
                 nombreDestinatario = url.searchParams.get("nombre");
                 correoDestinatario = url.searchParams.get("correo");
-                alert("selecciona una tarjeta a enviar");
+                
 
                 console.log(nombre, correo);
             }
